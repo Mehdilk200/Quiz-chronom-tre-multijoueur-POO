@@ -1,2 +1,2 @@
-# Quiz_chronom-tr-_multijoueur_POO
+# Quiz chronométré multijoueur
 mini-projet
