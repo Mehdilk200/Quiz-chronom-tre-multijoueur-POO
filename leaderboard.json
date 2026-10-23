@@ -1,0 +1,32 @@
+{
+  "A": {
+    "total": 27,
+    "games": 1,
+    "wins": 0
+  },
+  "1": {
+    "total": 29,
+    "games": 1,
+    "wins": 1
+  },
+  "Joueur1": {
+    "total": 124,
+    "games": 1,
+    "wins": 1
+  },
+  "Joueur2": {
+    "total": 123,
+    "games": 1,
+    "wins": 0
+  },
+  "El mehdi": {
+    "total": 147,
+    "games": 1,
+    "wins": 0
+  },
+  "ayman": {
+    "total": 161,
+    "games": 1,
+    "wins": 1
+  }
+}

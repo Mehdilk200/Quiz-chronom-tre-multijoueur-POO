@@ -1,0 +1,490 @@
+{
+  "Java": [
+    {
+      "question": "Quel mot-clé permet l'héritage en Java ?",
+      "choices": [
+        "implements",
+        "extends",
+        "inherits",
+        "super"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Quel mot-clé permet d'implémenter une interface en Java ?",
+      "choices": [
+        "extends",
+        "implements",
+        "uses",
+        "interface"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Quel mot-clé empêche une classe d'être héritée ?",
+      "choices": [
+        "static",
+        "abstract",
+        "final",
+        "private"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Quelle méthode est le point d'entrée d'un programme Java ?",
+      "choices": [
+        "start()",
+        "main()",
+        "run()",
+        "init()"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Quel mot-clé sert à créer un objet ?",
+      "choices": [
+        "create",
+        "new",
+        "alloc",
+        "make"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Quel mot-clé désigne l'objet courant ?",
+      "choices": [
+        "self",
+        "this",
+        "me",
+        "current"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Quel type de collection n'accepte pas de doublons ?",
+      "choices": [
+        "List",
+        "Set",
+        "Map",
+        "Array"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Quel mot-clé déclare une constante en Java ?",
+      "choices": [
+        "const",
+        "final",
+        "static",
+        "let"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Quelle classe est la racine de toutes les classes Java ?",
+      "choices": [
+        "Base",
+        "Root",
+        "Object",
+        "Class"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Quel mot-clé sert à gérer une exception ?",
+      "choices": [
+        "catch",
+        "handle",
+        "rescue",
+        "except"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Quelle est la taille d'un int en Java ?",
+      "choices": [
+        "8 bits",
+        "16 bits",
+        "32 bits",
+        "64 bits"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Quel mot-clé rend un membre accessible sans instance ?",
+      "choices": [
+        "final",
+        "static",
+        "public",
+        "global"
+      ],
+      "answer": 1
+    }
+  ],
+  "Python": [
+    {
+      "question": "Quelle méthode est le constructeur d'une classe Python ?",
+      "choices": [
+        "__new_obj__",
+        "__init__",
+        "constructor",
+        "__start__"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Comment appeler le constructeur de la classe parente ?",
+      "choices": [
+        "super().__init__()",
+        "parent.init()",
+        "base()",
+        "this.super()"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Quel type est immuable en Python ?",
+      "choices": [
+        "list",
+        "dict",
+        "set",
+        "tuple"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Quel mot-clé définit une fonction ?",
+      "choices": [
+        "func",
+        "function",
+        "def",
+        "lambda"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Quel module permet de lire/écrire du JSON ?",
+      "choices": [
+        "json",
+        "pickle",
+        "csv",
+        "yaml"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Que renvoie len('quiz') ?",
+      "choices": [
+        "3",
+        "4",
+        "5",
+        "Erreur"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Quel symbole sert aux commentaires en Python ?",
+      "choices": [
+        "//",
+        "#",
+        "--",
+        "/*"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Que renvoie type([]) ?",
+      "choices": [
+        "<class 'list'>",
+        "<class 'array'>",
+        "<class 'tuple'>",
+        "<class 'dict'>"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Quel mot-clé crée une classe ?",
+      "choices": [
+        "object",
+        "class",
+        "struct",
+        "def"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Quel décorateur définit une méthode de classe ?",
+      "choices": [
+        "@static",
+        "@classmethod",
+        "@cls",
+        "@method"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Comment ouvrir un fichier proprement ?",
+      "choices": [
+        "with open(...)",
+        "using open(...)",
+        "file.open(...)",
+        "try open(...)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Que vaut 7 // 2 ?",
+      "choices": [
+        "3.5",
+        "3",
+        "4",
+        "2"
+      ],
+      "answer": 1
+    }
+  ],
+  "POO": [
+    {
+      "question": "Comment appelle-t-on le fait de cacher les attributs internes d'une classe ?",
+      "choices": [
+        "Héritage",
+        "Polymorphisme",
+        "Encapsulation",
+        "Abstraction"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Quel principe permet à une même méthode d'avoir plusieurs comportements ?",
+      "choices": [
+        "Polymorphisme",
+        "Encapsulation",
+        "Composition",
+        "Instanciation"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Une classe abstraite peut-elle être instanciée directement ?",
+      "choices": [
+        "Oui",
+        "Non",
+        "Seulement en Python",
+        "Seulement si elle est publique"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Comment appelle-t-on une instance d'une classe ?",
+      "choices": [
+        "Un module",
+        "Un objet",
+        "Un package",
+        "Une interface"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Quelle relation exprime « A possède un B » ?",
+      "choices": [
+        "Héritage",
+        "Composition",
+        "Surcharge",
+        "Interface"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Que signifie le « S » de SOLID ?",
+      "choices": [
+        "Single Responsibility",
+        "Simple Structure",
+        "Static Scope",
+        "Strong Syntax"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Quel principe permet à une classe de réutiliser une autre ?",
+      "choices": [
+        "Héritage",
+        "Encapsulation",
+        "Surcharge",
+        "Typage"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Que fait un constructeur ?",
+      "choices": [
+        "Détruit l'objet",
+        "Initialise l'objet",
+        "Copie la classe",
+        "Importe un module"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Une interface contient surtout…",
+      "choices": [
+        "Des attributs privés",
+        "Des signatures de méthodes",
+        "Des objets",
+        "Des boucles"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Que signifie « surcharger » une méthode ?",
+      "choices": [
+        "La supprimer",
+        "La redéfinir dans une sous-classe",
+        "La rendre privée",
+        "La copier"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Quel est l'objectif de l'abstraction ?",
+      "choices": [
+        "Cacher les détails inutiles",
+        "Accélérer le code",
+        "Supprimer les classes",
+        "Éviter les objets"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Un attribut « private » est accessible…",
+      "choices": [
+        "Partout",
+        "Uniquement dans sa classe",
+        "Dans le package",
+        "Par les sous-classes seulement"
+      ],
+      "answer": 1
+    }
+  ],
+  "C++": [
+    {
+      "question": "Quel symbole permet l'héritage en C++ (class B ... A) ?",
+      "choices": [
+        ":",
+        "extends",
+        "->",
+        "::"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Quel mot-clé permet de redéfinir une méthode dynamiquement (polymorphisme) ?",
+      "choices": [
+        "virtual",
+        "dynamic",
+        "abstract",
+        "inline"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Quel opérateur alloue dynamiquement un objet en C++ ?",
+      "choices": [
+        "alloc",
+        "new",
+        "make",
+        "create"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Quel opérateur libère la mémoire allouée avec new ?",
+      "choices": [
+        "free",
+        "remove",
+        "delete",
+        "release"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Comment s'appelle le destructeur de la classe Voiture ?",
+      "choices": [
+        "finalize()",
+        "~Voiture()",
+        "destroy()",
+        "Voiture::end()"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Quel opérateur est la résolution de portée en C++ ?",
+      "choices": [
+        "::",
+        "->",
+        ".",
+        "=>"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Quel niveau d'accès autorise la classe et ses classes dérivées uniquement ?",
+      "choices": [
+        "private",
+        "protected",
+        "public",
+        "friend"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Quel flux standard permet d'afficher du texte à l'écran ?",
+      "choices": [
+        "cin",
+        "cout",
+        "scanf",
+        "getline"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Une classe abstraite en C++ contient au moins…",
+      "choices": [
+        "une méthode virtuelle pure",
+        "un constructeur privé",
+        "un attribut static",
+        "un destructeur"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Que signifie « const » après une méthode : void afficher() const; ?",
+      "choices": [
+        "Elle ne modifie pas l'objet",
+        "Elle est statique",
+        "Elle est virtuelle",
+        "Elle est privée"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Quel mot-clé donne à une fonction externe l'accès aux membres privés d'une classe ?",
+      "choices": [
+        "friend",
+        "extern",
+        "static",
+        "using"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Comment déclare-t-on une référence r sur un entier x ?",
+      "choices": [
+        "int *r = x;",
+        "int &r = x;",
+        "ref int r = x;",
+        "int r = &x;"
+      ],
+      "answer": 1
+    }
+  ]
+}
