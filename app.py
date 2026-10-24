@@ -16,9 +16,9 @@ from quiz import BASE_DIR, LETTERS, Leaderboard, Player, QuestionBank, QuestionC
 
 BASE_POINTS = 10
 MAX_TIME_BONUS = 10
-MEDALS = ["🥇", "🥈", "🥉", "🎖️"]
+MEDALS = ["1", "2", "3", "★"]
 
-st.set_page_config(page_title="Quiz chronométré", page_icon="🎯", layout="centered")
+st.set_page_config(page_title="Quiz chronométré", page_icon="◎", layout="centered")
 
 CSS = """
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
@@ -213,7 +213,7 @@ def scoreboard(g: dict) -> None:
 #  Écrans
 # ----------------------------------------------------------------------
 def setup_view() -> None:
-    st.title("🎯 Quiz chronométré")
+    st.title("◎ Quiz chronométré")
     st.caption("Multijoueur local · 2 à 4 joueurs · jokers · classement persistant")
     bank = QuestionBank(BASE_DIR / "questions.json")
 
@@ -225,7 +225,7 @@ def setup_view() -> None:
         c1, c2 = st.columns(2)
         seconds = c1.slider("Temps par question (s)", 5, 30, 15)
         per_player = c2.slider("Questions par joueur", 1, 10, 5)
-        submitted = st.form_submit_button("🚀 Commencer", type="primary", width="stretch")
+        submitted = st.form_submit_button("▶ Commencer", type="primary", width="stretch")
 
     if submitted:
         names = [x.strip() or f"Joueur{i + 1}" for i, x in enumerate(raw_names)]
@@ -235,7 +235,7 @@ def setup_view() -> None:
             start_game(names, category, seconds, per_player)
             st.rerun()
 
-    with st.expander("🏆 Classement général"):
+    with st.expander("▣ Classement général"):
         leaderboard_table()
 
 
@@ -262,7 +262,7 @@ def game_view() -> None:
     scoreboard(g)
     st.markdown(
         f'<div class="meta">Question {g["idx"] + 1}/{len(g["questions"])} · '
-        f"🎮 <b>{html.escape(player.name)}</b> · {html.escape(g['category'])}</div>",
+        f"◉ <b>{html.escape(player.name)}</b> · {html.escape(g['category'])}</div>",
         unsafe_allow_html=True,
     )
 
@@ -299,7 +299,7 @@ def game_view() -> None:
     st.write("")
     jcols = st.columns(3)
     jcols[0].markdown('<div class="meta" style="padding-top:.55rem">Jokers disponibles</div>', unsafe_allow_html=True)
-    icons = {"J": "✂️", "P": "⏭️"}
+    icons = {"J": "✂", "P": "⏭"}
     for col, key in zip(jcols[1:], ("J", "P")):
         joker = player.jokers[key]
         col.button(f"{icons[key]} {joker.label}", key=f"joker_{key}_{g['idx']}",
@@ -308,26 +308,26 @@ def game_view() -> None:
 
     # --- retour d'information ---
     if not answered and g["message"]:
-        st.info(f"✨ {g['message']}")
+        st.info(f"✦ {g['message']}")
     if answered:
         res = g["result"]
         good = f"{LETTERS[q.answer]}. {md_escape(q.choices[q.answer])}"
         if res == "correct":
-            st.success(f"✅ Bonne réponse ! **+{g['points']} points**")
+            st.success(f"✓ Bonne réponse ! **+{g['points']} points**")
         elif res == "wrong":
-            st.error(f"❌ Faux. La bonne réponse était : {good}")
+            st.error(f"✕ Faux. La bonne réponse était : {good}")
         elif res == "timeout":
-            st.warning(f"⌛ Temps écoulé ! La bonne réponse était : {good}")
+            st.warning(f"⏱ Temps écoulé ! La bonne réponse était : {good}")
         else:
-            st.info("⏭️ Question passée (0 point).")
+            st.info("⏭ Question passée (0 point).")
         last = g["idx"] + 1 >= len(g["questions"])
-        st.button("🏁 Voir les résultats" if last else "Question suivante →",
+        st.button("▣ Voir les résultats" if last else "Question suivante →",
                   type="primary", on_click=on_next, width="stretch")
 
 
 def results_view() -> None:
     g = game()
-    st.title("🏁 Résultats")
+    st.title("▣ Résultats")
     ranked = sorted(g["players"], key=lambda p: p.score, reverse=True)
     for i, p in enumerate(ranked):
         first = " first" if p.score == ranked[0].score else ""
@@ -340,9 +340,9 @@ def results_view() -> None:
         st.balloons()
         g["celebrated"] = True
 
-    st.subheader("🏆 Classement général")
+    st.subheader("▣ Classement général")
     leaderboard_table()
-    st.button("🔁 Rejouer", type="primary", on_click=on_restart, width="stretch")
+    st.button("↻ Rejouer", type="primary", on_click=on_restart, width="stretch")
 
 
 # ----------------------------------------------------------------------
