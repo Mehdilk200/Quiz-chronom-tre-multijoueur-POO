@@ -11,7 +11,7 @@
 | **Module**               | POO — Mini-projets : « 50 jeux avec interface graphique »                                          |
 | **Encadrant**            | Pr. BERKA Anas — a.berka@uca.ac.ma                                                                   |
 | **Année universitaire** | 2026-2027                                                                                             |
-| **Réalisé par**        | LAKHIAL El Mehdi ,                                                                                   |
+| **Réalisé par**        | LAKHIAL El Mehdi , BELATTAR Othmane ,                                                                                 |
 
 ---
 
