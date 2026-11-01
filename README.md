@@ -1,4 +1,3 @@
-
 # Quiz chronométré multijoueur
 
 > **Jeu n° 29 / 50** · Niveau ★★ Intermédiaire
@@ -11,7 +10,7 @@
 | **Module**               | POO — Mini-projets : « 50 jeux avec interface graphique »                                          |
 | **Encadrant**            | Pr. BERKA Anas — a.berka@uca.ac.ma                                                                   |
 | **Année universitaire** | 2026-2027                                                                                             |
-| **Réalisé par**        | LAKHIAL El Mehdi ,                                                                                   |
+| **Réalisé par**        | LAKHIAL El Mehdi ,                                                                                    |
 
 ---
 
@@ -50,7 +49,16 @@ Le projet est livré en **deux interfaces** qui partagent exactement les mêmes 
 
 ```
 .
-├── quiz.py            # Logique du jeu (classes POO) + version console
+├── quiz.py            # Point d'entrée console et façade des classes
+├── question.py        # Classe Question
+├── question_bank.py   # Classe QuestionBank
+├── question_context.py # Contexte d'une question en cours
+├── joker.py           # Joker, FiftyFifty et Pass
+├── player.py          # Classe Player
+├── leaderboard.py     # Classe Leaderboard
+├── quiz_game.py       # Classe QuizGame et déroulement console
+├── timed_input.py     # Saisie avec compte à rebours
+├── settings.py        # Constantes partagées
 ├── app.py             # Interface graphique Streamlit
 ├── questions.json     # Banque de questions par catégorie
 ├── leaderboard.json   # Classement persistant (créé automatiquement)
@@ -129,7 +137,7 @@ classDiagram
 | **Polymorphisme**             | Le jeu appelle `joker.apply(ctx)` sans connaître le type exact du joker                                                     |
 | **Composition / agrégation** | Un `Player` possède ses jokers ; `QuizGame` possède ses joueurs ; `QuestionBank` possède des `Question`             |
 | **Responsabilité unique**    | Questions, joueurs, jokers, classement et déroulement du jeu sont séparés dans des classes distinctes                       |
-| **Réutilisation**            | `app.py` importe les classes de `quiz.py` sans les réécrire                                                              |
+| **Réutilisation**            | `app.py` importe les classes depuis `quiz.py`, qui les ré-exporte depuis leurs modules dédiés                          |
 
 ## 6. Installation et exécution
 
