@@ -1,3 +1,5 @@
+**Belattar Othmane**
+
 # Quiz chronométré multijoueur
 
 > **Jeu n° 29 / 50** · Niveau ★★ Intermédiaire
@@ -10,7 +12,7 @@
 | **Module**               | POO — Mini-projets : « 50 jeux avec interface graphique »                                          |
 | **Encadrant**            | Pr. BERKA Anas — a.berka@uca.ac.ma                                                                   |
 | **Année universitaire** | 2026-2027                                                                                             |
-| **Réalisé par**        | LAKHIAL El Mehdi ,                                                                                    |
+| **Réalisé par**        | **Lakhial El Mehdi** ,**Belattar Othmane**,**Boutoucha Ismail**                    |
 
 ---
 
@@ -137,7 +139,7 @@ classDiagram
 | **Polymorphisme**             | Le jeu appelle `joker.apply(ctx)` sans connaître le type exact du joker                                                     |
 | **Composition / agrégation** | Un `Player` possède ses jokers ; `QuizGame` possède ses joueurs ; `QuestionBank` possède des `Question`             |
 | **Responsabilité unique**    | Questions, joueurs, jokers, classement et déroulement du jeu sont séparés dans des classes distinctes                       |
-| **Réutilisation**            | `app.py` importe les classes depuis `quiz.py`, qui les ré-exporte depuis leurs modules dédiés                          |
+| **Réutilisation**            | `app.py` importe les classes depuis `quiz.py`, qui les ré-exporte depuis leurs modules dédiés                           |
 
 ## 6. Installation et exécution
 
